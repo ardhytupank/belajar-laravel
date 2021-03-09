@@ -20,3 +20,5 @@ Route::get('/about', [PagesController::class, 'about']);
 
 Route::get('kelas', [KelasController::class, 'index']);
 Route::post('kelas', [KelasController::class, 'store']);
+Route::patch('kelas/edit', [KelasController::class, 'update']);
+Route::delete('kelas/{kelas}', [KelasController::class, 'destroy']);
